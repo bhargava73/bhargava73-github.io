@@ -151,10 +151,10 @@
     .logo {
         background-color: transparent;
         background-size: contain;
-        color: #FF6565;
+        color: #f9cb40  ;
         font-family: 'Port Lligat Sans',sans-serif, cursive;
-        font-size: 1.2rem;
-        font-weight: 750;
+        font-size: 1.1rem;
+        font-weight: 100;
         letter-spacing: 2px;
     }
 
@@ -212,7 +212,7 @@
     }
 
     .sticky {
-        background-color: #fff;
+        background-color: #f7f7f7;
         height: 65px;
         padding: 20px 0;
     }
@@ -520,7 +520,28 @@
         flex-wrap: wrap;
     }
 
-    .skill {
+    #resume .skills {
+        margin-top: 30px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .skills p{
+        display: inline-block;
+        margin: 10px;
+        color: #fefefe;
+        font-size: 15px;
+        text-align: center;
+        font-family: 'Balsamiq Sans', cursive;
+        font-weight: 500;
+        border: 1px solid #1e91d6;
+        padding: 8px;
+        border-radius: 4px;
+        transition: .2s linear;
+        background: #1e91d6;
+    }
+
+    /*.skill {
         width: calc(50% - 20px);
         margin: 15px 0;
     }
@@ -575,7 +596,7 @@
 
     .os:after {
         width: 60%;
-    }
+    }*/
 
     section.dark {
         background-color: #353b48;
@@ -970,7 +991,7 @@
             background-color: #f1f1f1;
         }
         .sticky .navbar-menu a:hover{
-            color: #;
+            color: #5AD6AD;
         }
         .navbar-menu.active {
             right: 0;
@@ -1160,62 +1181,15 @@
 
         <div class="inner-width">
             <h1 class="section-sub-title">Skills</h1>
-            <div class="skills">
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Python Programming</span>
-                        <span>70%</span>
-                    </div>
-                    <div class="skill-bar python"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Data Science with Python</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill-bar dsp"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Problem Solving</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill-bar ps"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Machine Learning</span>
-                        <span>40%</span>
-                    </div>
-                    <div class="skill-bar ml"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>HTML/CSS</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill-bar htmlcss"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Javascript</span>
-                        <span>40%</span>
-                    </div>
-                    <div class="skill-bar js"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Arduino</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="skill-bar arduino"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-info">
-                        <span>Operating System</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="skill-bar os"></div>
+                <div class="skills">
+                    <p>Python Programming</p>
+                    <p>Data Science with Python</p>
+                    <p>Problem Solving</p>
+                    <p>Machine Learning</p>
+                    <p>HTML/CSS</p>
+                    <p>Javascript</p>
+                    <p>Arduino</p>
+                    <p>Operating System</p>
                 </div>
             </div>
         </div>
