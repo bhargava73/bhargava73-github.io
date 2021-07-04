@@ -655,6 +655,10 @@ section.dark .section-sub-title .section-title::after {
     color: #444;
 }
 
+.time-line .block h4 {
+    color: #ff6666;
+}
+
 .inner-width .timeline {
     position: relative;
     overflow: hidden;
@@ -717,8 +721,9 @@ section.dark .section-sub-title .section-title::after {
     border-width: 10px 0 10px 15px;
     border-color: transparent transparent transparent #f5f5f5;
 }
-.timeline-content h2 {
+.timeline-content h3 {
     color: #3399ffcc;
+
 }
 .timeline-img {
     width: 30px;
