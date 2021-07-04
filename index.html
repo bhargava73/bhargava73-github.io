@@ -23,10 +23,10 @@
                 <span></span>
             </button>
             <div class="navbar-menu">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#resume">Resume</a>
-                <a href="#contact">Contact</a>
+                <a class="closemenu" href="#home">Home</a>
+                <a class="closemenu" href="#about">About</a>
+                <a class="closemenu" href="#resume">Resume</a>
+                <a class="closemenu" href="#contact">Contact</a>
             </div>
         </div>
     </nav>
@@ -192,7 +192,7 @@
             <div class="blogcards">
                 <div class="blogcard" data-aos="fade-down">
                     <span>04/2021</span>
-                    <h1>Python For Data Science</h1>
+                    <h6>Python For Data Science</h6>
                     <h2>NPTEL</h2>
                     <p>Credential ID : NOC21CS33S11211053</p>
                     <a href="media/Python for Data Science.jpg"><i class="far fa-eye"></i></a>
@@ -201,7 +201,7 @@
 
                 <div class="blogcard" data-aos="zoom-in">
                     <span>06/2021</span>
-                    <h1>Introduction to Data Science in Python</h1>
+                    <h6>Introduction to Data Science in Python</h6>
                     <h2>University of Michigan</h2>
                     <p>coursera.org/verify/FBL3AB33TVE9</p>
                     <a href="media/CourseraDSP-1.png"><i class="far fa-eye"></i></a>
@@ -210,7 +210,7 @@
 
                 <div class="blogcard" data-aos="fade-up">
                     <span>07/2019</span>
-                    <h1>Sensors and Actuators</h1>
+                    <h6>Sensors and Actuators</h6>
                     <h2>NPTEL</h2>
                     <p>Credential ID NPTEL19EE41S41141029</p>
                     <a href="media/Sensors and Actuators.jpg"><i class="far fa-eye"></i></a></i>
@@ -219,7 +219,7 @@
 
                 <div class="blogcard" data-aos="fade-down">
                     <span>06/2021</span>
-                    <h1>Getting Started with AWS Machine Learning</h1>
+                    <h6>Getting Started with AWS Machine Learning</h6>
                     <h2>AWS</h2>
                     <p>coursera.org/verify/6DAKFP4ZBBFU</p>
                     <a href="media/CourseraAWS-1.png"><i class="far fa-eye"></i></a>
@@ -228,7 +228,7 @@
 
                 <div class="blogcard" data-aos="fade-up">
                     <span>05/2021</span>
-                    <h1>Introduction to Cybersecurity</h1>
+                    <h6>Introduction to Cybersecurity</h6>
                     <h2>CISCO</h2>
                     <a href="media/BHARGAVAA-Batch2CyberSe-certificate-1.png"><i class="far fa-eye"></i></a>
                     <a download href="media/BHARGAVAA-Batch2CyberSe-certificate.pdf"><i class="fas fa-file-download"></i></</a>
@@ -297,6 +297,12 @@
 
             $('.menu-toggler').click(function(){
                 $(this).toggleClass("active");
+                $(".navbar-menu").toggleClass("active");
+                $(".navbar-menu").toggleClass("hidden");
+            });
+
+            $('.closemenu').click(function(){
+                $(".menu-toggler").toggleClass("active");
                 $(".navbar-menu").toggleClass("active");
                 $(".navbar-menu").toggleClass("hidden");
             });

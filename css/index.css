@@ -864,12 +864,12 @@ footer {
     margin-top: 25px;
     bottom:0;
 }
-.blogcard h1 {
+.blogcard h6 {
     line-height: 1;
     margin: 0;
+    margin-top: 20px;
     padding: 20px;
     color: #1da1f2;
-    font-size: 20px;
 }
 .blogcard span{
     color: #ff6666;
