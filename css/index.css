@@ -521,8 +521,7 @@ section {
 
 .about-text h3 span:nth-child(1):after,
 .about-text h3 span:nth-child(2):after,
-.about-text h3 span:nth-child(3):after,
-.about-text h3 span:nth-child(4):after {
+.about-text h3 span:nth-child(3):after {
 	content: "";
 	width: 6px;
 	height: 6px;
@@ -986,7 +985,7 @@ footer {
 	display: -webkit-flex;
 	display: flex;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 00px;
 }
 
 .slide-container {
@@ -996,6 +995,7 @@ footer {
 .slide-card {
 	margin: 0 20px;
 	padding: 9px 33px;
+	width: 300px;
 	border-radius: 20px;
 	background: #fffafa;
 	cursor: pointer;
@@ -1064,7 +1064,7 @@ footer {
 
 @media (max-width: 800px) {
 	.slide-container {
-		padding: 50px 0px;
+		padding: 30px 10px;
 	}
 	.swiper-slide {
 		width: 360px;
