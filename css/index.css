@@ -12,6 +12,11 @@ body {
 	overflow-x: hidden;
 }
 
+html {
+	scroll-behavior: smooth;
+	-webkit-tap-highlight-color: transparent;
+}
+
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -107,10 +112,6 @@ body {
 	100% {
 		transform: translate(-120px, 0);
 	}
-}
-
-html {
-	scroll-behavior: smooth;
 }
 
 ::selection {
@@ -438,13 +439,13 @@ html {
 }
 
 .bounce-right {
-	color: #3399ff;
+	color: #01bfa5;
 	text-align: center;
 }
 
 .bounce-right a {
 	cursor: pointer;
-	color: #3399ff;
+	color: #01bfa5;
 }
 
 .bounce-right a:hover {
@@ -452,8 +453,11 @@ html {
 }
 
 section {
-	padding: 100px 0 20px 0;
+	padding: 75px 0 20px 0;
 	background-color: #f1f1f1;
+}
+section:nth-child(even) {
+	background-color: #f6f6f6;
 }
 
 .section-title {
@@ -769,7 +773,7 @@ section.dark .section-sub-title .section-title::after {
 footer {
 	background: url("../media/footer.svg") center;
 	color: #121212;
-	padding: 80px 0;
+	padding: 40px 0;
 	text-align: center;
 }
 
