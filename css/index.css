@@ -432,10 +432,36 @@ html {
 	}
 }
 
+@keyframes bounceBottom {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -ms-transform: translateY(10px);
+        transform: translateY(10px);
+    }
+    60% {
+        -ms-transform: translateY(5px);
+        transform: translateY(5px);
+    }
+}
+
 .fa-arrow-right {
 	-webkit-animation: bounceRight 2s infinite;
 	animation: bounceRight 2s infinite;
 	-moz-animation: bounce 2s infinite;
+}
+
+.fa-arrow-down {
+	-webkit-animation: bounceBottom 2s infinite;
+	animation: bounceBottom 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	color: #ffffff;
 }
 
 .bounce-right {
@@ -1027,4 +1053,14 @@ marquee > a.focus {
 		border-width: 10px 15px 10px 0;
 		border-color: transparent #f5f5f5 transparent transparent;
 	}
+}
+
+
+.apk-download-btn {
+	padding: 10px 20px;
+	outline: none;
+	border: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-color: #3399ff;
 }
