@@ -1,4 +1,4 @@
-function downloadApk() {
+function getApkLink() {
     const apiUrl = 'https://firebasestorage.googleapis.com/v0/b/space-73.appspot.com/o/files%2Flzl3FD5FXIRiKLUKSMmcICXKSTk2%2FNotify.apk.txt';
 
     fetch(apiUrl)
@@ -10,6 +10,7 @@ function downloadApk() {
         })
         .then(jsonData => {
             const apkUrl = apiUrl + "?alt=media&token=" + jsonData.downloadTokens;
+            console.log(apkUrl);
             downloadApkFromLink(apkUrl);
         })
         .catch(error => {
@@ -18,8 +19,11 @@ function downloadApk() {
 }
 
 function downloadApkFromLink(apkUrl) {
-    fetch(apkUrl)
+    fetch(apkUrl, {
+      //  mode: "no-cors",
+    })
         .then(response => {
+          console.log(response);
           if (!response.ok) {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
@@ -37,4 +41,13 @@ function downloadApkFromLink(apkUrl) {
         .catch(error => {
           console.error('Error fetching APK file:', error);
         });
+}
+
+function downloadApk() {
+  const link = document.createElement('a');
+  link.href = "../media/Notify.apk";
+  link.download = 'Notify.apk';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 }
