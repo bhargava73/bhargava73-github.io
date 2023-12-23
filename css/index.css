@@ -169,7 +169,12 @@ html {
 	background-color: #1da1f2;
 	margin: 6px 0;
 	position: relative;
+	border-radius: 10px;
 	transition: 0.3s linear;
+}
+
+.menu-toggler span:first-child, .menu-toggler span:last-child {
+	width: 20px;
 }
 
 .navbar-menu a {
@@ -211,17 +216,14 @@ html {
 	padding: 20px 0;
 }
 
-.sticky .logo {
+/* .sticky .logo {
 	color: #1da1f2;
 }
 
 .sticky .navbar-menu a {
 	color: #111;
-}
+} */
 
-.sticky .menu-toggler span {
-	background-color: #111;
-}
 
 #home {
 	height: 100vh;
@@ -482,6 +484,7 @@ section {
 	padding: 75px 0 20px 0;
 	background-color: #f1f1f1;
 }
+
 section:nth-child(even) {
 	background-color: #f6f6f6;
 }
@@ -935,18 +938,20 @@ footer {
 		transition: 0.3s linear;
 	}
 	.hidden {
-		display: block;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 	.navbar-menu a {
 		display: block;
 		font-size: 30px;
-		font-family: "Balsamiq Sans", cursive;
+		font-family: "Dosis";
 		margin: 30px 0;
 		color: #efefef;
 	}
-	.sticky .navbar-menu {
+	/* .sticky .navbar-menu {
 		background-color: #f1f1f1;
-	}
+	} */
 	.sticky .navbar-menu a:hover {
 		color: #5ad6ad;
 	}
@@ -966,6 +971,7 @@ footer {
 	}
 	.inner-width {
 		max-width: 800px;
+		padding: 0 10px;
 	}
 	.about-pic {
 		margin: 0 auto 60px;

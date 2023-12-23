@@ -25,11 +25,13 @@
                 <span></span>
             </button>
             <div class="navbar-menu">
-                <a class="closemenu" href="#home">Home</a>
-                <a class="closemenu" href="#about">About</a>
-                <a class="closemenu" href="#resume">Resume</a>
-                <a class="closemenu" href="#projects">Projects</a>
-                <a class="closemenu" href="#contact">Contact</a>
+                <div class="navbar-items">
+                    <a class="closemenu" href="#home">Home</a>
+                    <a class="closemenu" href="#about">About</a>
+                    <a class="closemenu" href="#resume">Resume</a>
+                    <a class="closemenu" href="#projects">Projects</a>
+                    <a class="closemenu" href="#contact">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -138,7 +140,7 @@
             </div>
         </div>
         <div class="inner-width">
-            <h1 class="section-sub-title">Education & Experiences</h1>
+            <h1 class="section-sub-title">Education</h1>
             <div class="timeline">
                 <div class="container">
                     <div data-aos="fade-right" class="timeline-item">
@@ -556,6 +558,27 @@
         AOS.init({
             offset: 210,
             duration: 900,
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const sections = document.querySelectorAll('section');
+    
+          const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+              const section = entry.target;
+    
+              if (entry.isIntersecting) {
+                section.classList.add('active');
+              } else {
+                section.classList.remove('active');
+              }
+            });
+          }, { threshold: 0.5 });
+    
+          sections.forEach(section => {
+            observer.observe(section);
+          });
         });
     </script>
 </body>
