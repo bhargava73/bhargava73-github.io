@@ -1,6 +1,5 @@
-function getApkLink() {
-    const apiUrl = 'https://firebasestorage.googleapis.com/v0/b/space-73.appspot.com/o/files%2Flzl3FD5FXIRiKLUKSMmcICXKSTk2%2FNotify.apk.txt';
-
+function downloadApk() {
+    const apiUrl = 'https://firebasestorage.googleapis.com/v0/b/space-73.appspot.com/o/files%2Flzl3FD5FXIRiKLUKSMmcICXKSTk2%2FNotify.zip';
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {
@@ -10,18 +9,22 @@ function getApkLink() {
         })
         .then(jsonData => {
             const apkUrl = apiUrl + "?alt=media&token=" + jsonData.downloadTokens;
-            console.log(apkUrl);
-            downloadApkFromLink(apkUrl);
+            const link = document.createElement('a');
+            link.href = apkUrl;
+            link.download = 'Notify.apk';
+            document.body.appendChild(link);
+            link.click();
+            toastr["success"]("Notify App zip is being downloaded. 😀");
+            document.body.removeChild(link);
         })
         .catch(error => {
             console.error('Error fetching JSON:', error);
+            downloadLocalApk();
         });
 }
 
 function downloadApkFromLink(apkUrl) {
-    fetch(apkUrl, {
-      //  mode: "no-cors",
-    })
+    fetch(apkUrl)
         .then(response => {
           console.log(response);
           if (!response.ok) {
@@ -43,10 +46,11 @@ function downloadApkFromLink(apkUrl) {
         });
 }
 
-function downloadApk() {
+function downloadLocalApk() {
+  toastr["info"]("Notify App zip is being downloaded. 😀");
   const link = document.createElement('a');
-  link.href = "../media/Notify.apk";
-  link.download = 'Notify.apk';
+  link.href = "../media/Notify.zip";
+  link.download = 'Notify.zip';
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
