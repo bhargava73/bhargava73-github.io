@@ -33,6 +33,14 @@
                     <a class="closemenu" href="#projects">Projects</a>
                     <a class="closemenu" href="#resume">Resume</a>
                     <a class="closemenu" href="#contact">Contact</a>
+                    <p class="closemenu">
+                        <input type="checkbox" class="toggle-theme" id="toggle-theme">
+                        <label for="toggle-theme" class="toggle-theme-label">
+                          <i class="fas fa-moon"></i>
+                          <i class="fas fa-sun"></i>
+                          <span class="ball"></span>
+                        </label>
+                    </p>
                 </div>
             </div>
         </div>
@@ -114,11 +122,16 @@
                                 <ul style="padding-bottom: 10px;color:#777777">Tech stacks used -
                                     <li style="color:#52b788;">Flutter</li>
                                 </ul>
-                                <li>This is an android application built to keep track of task via notifications.</li>
-                                <li>It has feature to take notes as well.</li>
-                                <li>It has many more intenal features to offer, so I recommand you to give it a try</li>
+                                <li>This is an android application focused on tasks and notes made keeping in mind the user requirements and ease of use.</li>
+                                <li>The user data will be locally stored. So no need to worry about your data being shared.</li>
+                                <li>Grouping various tasks is made easy with this app.</li>
+                                <li>It offers various features, including lock for privacy and scheduling of tasks.</li>
+                                <li>Single click from within the app is all it takes to update the app after first manual install(App is available inside downloaded zip folder).</li>
+                                <li>Switching the app from one mobile to another, is also made easy via download data feature available in the app.</li>
+
                                 <div style="margin-top: 20px;">
-                                    <button class="apk-download-btn" onclick="downloadApk()">Download Apk <i class="fa fa-arrow-down"></i></button>
+                                    <div style="margin-top: 20px;">
+                                    <button class="apk-download-btn" onclick="downloadApk()">Download Zipped App <i class="fa fa-arrow-down"></i></button>
                                 </div>
                             </ul>
                         </div>
@@ -494,7 +507,6 @@
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="js/smooth-scrollbar.js"></script>
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {
