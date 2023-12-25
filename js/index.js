@@ -55,3 +55,12 @@ function downloadLocalApk() {
   link.click();
   document.body.removeChild(link);
 }
+
+const progressBar = document.querySelector('.progress-bar');
+
+function scrollProgressBar() {
+  progressBar.style.width = `${((window.scrollY) / (document.body.scrollHeight - window.innerHeight) * 100)}%`;
+  requestAnimationFrame(scrollProgressBar);
+}
+
+scrollProgressBar();
