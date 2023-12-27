@@ -36,8 +36,9 @@
                     <p class="closemenu">
                         <input type="checkbox" class="toggle-theme" id="toggle-theme">
                         <label for="toggle-theme" class="toggle-theme-label">
-                          <i class="fas fa-moon"></i>
-                          <i class="fas fa-sun"></i>
+                          <iconify-icon icon="solar:moon-bold-duotone"></iconify-icon>
+                          <!-- <iconify-icon style="color: #f67f0b;" icon="ph:sun-duotone"></iconify-icon> -->
+                          <iconify-icon icon="line-md:sun-rising-twotone-loop" style="color: #f67f0b;"></iconify-icon>
                           <span class="ball"></span>
                         </label>
                     </p>
@@ -119,19 +120,19 @@
                             <div class="date">07/2023 - Present</div>
                             <h3 style="margin-top: 40px;">Notify App</h3>
                             <ul style="margin-top: 20px;">
-                                <ul style="padding-bottom: 10px;color:#777777">Tech stacks used -
+                                <ul style="padding-bottom: 10px; color: #9E9E9E">Tech stacks used -
                                     <li style="color:#52b788;">Flutter</li>
                                 </ul>
                                 <li>This is an android application focused on tasks and notes made keeping in mind the user requirements and ease of use.</li>
                                 <li>The user data will be locally stored. So no need to worry about your data being shared.</li>
                                 <li>Grouping various tasks is made easy with this app.</li>
                                 <li>It offers various features, including lock for privacy and scheduling of tasks.</li>
-                                <li>Single click from within the app is all it takes to update the app after first manual install(App is available inside downloaded zip folder).</li>
+                                <li>Single click from within the app is all it takes to update the app after first manual install (App is available inside downloaded zip folder).</li>
                                 <li>Switching the app from one mobile to another, is also made easy via download data feature available in the app.</li>
 
                                 <div style="margin-top: 20px;">
                                     <div style="margin-top: 20px;">
-                                    <button class="apk-download-btn" onclick="downloadApk()">Download Zipped App <i class="fa fa-arrow-down"></i></button>
+                                    <button class="apk-download-btn" onclick="downloadApk()"><iconify-icon style="top: 2px; position: relative;" icon="ph:android-logo-duotone"></iconify-icon> Download Zipped App <i class="fa fa-arrow-down"></i></button>
                                 </div>
                             </ul>
                         </div>
@@ -308,8 +309,8 @@
         <div class="inner-width">
             <h1 class="section-title">Resume</h1>
             <div class="buttons" style="--i: 1.38s;">
-                <a data-aos="fade-right" href="media/BhargavasResume.pdf"><i class="fas fa-eye"></i> View Resume</a>
-                <a data-aos="fade-left" download href="media/BhargavasResume.pdf"><i class="fas fa-download"></i> Download Resume</a>
+                <a data-aos="fade-right" href="media/BhargavasResume.pdf"><iconify-icon icon="lets-icons:view-alt-duotone" style="position: relative; top: 4px"></iconify-icon> View Resume</a>
+                <a data-aos="fade-left" download href="media/BhargavasResume.pdf"><iconify-icon icon="solar:file-download-bold-duotone" style="position: relative; top: 2px;"></iconify-icon> Download Resume</a>
             </div>
         </div>
 
@@ -507,6 +508,7 @@
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script>
         $(document).ready(function() {
             $(window).scroll(function() {

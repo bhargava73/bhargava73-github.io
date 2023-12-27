@@ -18,7 +18,7 @@
 	--color-fg-secondary: #efefef;
 	--color-fg: #ffffff;
 	--card-bg-color: #181818;
-	--navbar-bg: #010101;
+	--navbar-bg: #101001;
 	--section-bg: #121212;
 	--tooltip-bg: #151515;
 }
@@ -690,7 +690,7 @@ section.dark .section-sub-title .section-title::after {
 	content: "";
 	margin-top: 20px;
 	top: -70px;
-	background: var(--color-fg-secondary);
+	background: #9E9E9E;
 	width: 2px;
 	height: 96%;
 	position: absolute;
@@ -1003,13 +1003,13 @@ footer {
 	}
 
 	.toggle-theme-label .ball {
-		width: 38px !important; 
-		height: 38px !important;
+		width: 36px !important; 
+		height: 36px !important;
 	}
 
 	.toggle-theme:checked + .toggle-theme-label .ball {
 		transform: translateX(47px) !important;
-		transition: all ease-in 0.5s;
+		transition: all linear 0.5s;
 	}
 
 	/* .sticky .navbar-menu {
@@ -1223,11 +1223,11 @@ marquee > a.focus {
 
 .toggle-theme-label .ball {
   background-color: var(--color-fg-secondary);
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   position: absolute;
-  left: 2px;
-  top: 2px;
+  left: 4px;
+  top: 4px;
   border-radius: 50%;
   transition: transform 0.2s linear;
 }
