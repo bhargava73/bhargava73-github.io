@@ -317,17 +317,10 @@ html {
 }
 
 .sm a:nth-child(3) {
-	color: transparent;
-	background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-	background-clip: text;
-	-webkit-background-clip: text;
-}
-
-.sm a:nth-child(4) {
 	color: #01bfa5;
 }
 
-.sm a:nth-child(5) {
+.sm a:nth-child(4) {
 	color: #4078c0;
 }
 
@@ -344,10 +337,6 @@ html {
 }
 
 .sm a:nth-child(4):hover {
-	transform: scale(1.6);
-}
-
-.sm a:nth-child(5):hover {
 	transform: scale(1.6);
 }
 
@@ -403,15 +392,10 @@ html {
 }
 
 .smp a:nth-child(3):hover {
-	background: #d6249f;
-	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-}
-
-.smp a:nth-child(4):hover {
 	background-color: #01bfa5;
 }
 
-.smp a:nth-child(5):hover {
+.smp a:nth-child(4):hover {
 	background-color: #4078c0;
 }
 
